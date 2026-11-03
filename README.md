@@ -1,6 +1,6 @@
 # Fruit App
 
-Kleine Demo-App: Django-Backend liefert Früchte als JSON, das Frontend zeigt sie in einem Obstkorb.
+Kleine Demo-App: Django-Backend liefert Früchte als JSON, das Frontend zeigt sie als Liste.
 
 ## Backend starten
 
@@ -29,9 +29,9 @@ python manage.py test
 
 ## Konfiguration (Umgebungsvariablen)
 
-| Variable | Bedeutung | Standard |
-| --- | --- | --- |
-| `DJANGO_DEBUG` | `False` für Produktion | `True` |
-| `DJANGO_SECRET_KEY` | Pflicht, wenn `DJANGO_DEBUG=False` | Dev-Schlüssel |
-| `DJANGO_ALLOWED_HOSTS` | Kommagetrennte Hosts | leer |
-| `DJANGO_CORS_ORIGINS` | Kommagetrennte erlaubte Frontend-Origins (nur Produktion) | leer |
+| Variable               | Bedeutung                                                 | Standard      |
+| ---------------------- | --------------------------------------------------------- | ------------- |
+| `DJANGO_DEBUG`         | `False` für Produktion                                    | `True`        |
+| `DJANGO_SECRET_KEY`    | Pflicht, wenn `DJANGO_DEBUG=False`                        | Dev-Schlüssel |
+| `DJANGO_ALLOWED_HOSTS` | Kommagetrennte Hosts                                      | leer          |
+| `DJANGO_CORS_ORIGINS`  | Kommagetrennte erlaubte Frontend-Origins (nur Produktion) | leer          |
