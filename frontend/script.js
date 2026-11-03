@@ -56,6 +56,7 @@ fetch(API_URL)
     return response.json();
   })
   .then((data) => {
+    console.log(data);
     if (data.length === 0) {
       showError("Keine Früchte vorhanden.");
       return;
