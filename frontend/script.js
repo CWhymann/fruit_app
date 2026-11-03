@@ -9,7 +9,6 @@ const colorMap = {
   violett: "#7b2cbf",
 };
 
-const fruitsInBasket = document.getElementById("fruits-in-basket");
 const fruitList = document.getElementById("fruit-list");
 
 function showError(message) {
@@ -22,13 +21,7 @@ function showError(message) {
 function renderFruit(fruit) {
   const color = colorMap[fruit.farbe] || "#999";
 
-  const fruitCircle = document.createElement("div");
-  fruitCircle.className = "fruit-circle";
-  fruitCircle.style.backgroundColor = color;
-  fruitsInBasket.appendChild(fruitCircle);
-
   const listItem = document.createElement("li");
-  listItem.style.setProperty("--fruit-color", color);
 
   const colorDot = document.createElement("span");
   colorDot.className = "color-dot";

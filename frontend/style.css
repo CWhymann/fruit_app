@@ -20,86 +20,21 @@ h1 {
   font-size: 2rem;
 }
 
-/* Korb */
-.basket-wrapper {
-  position: relative;
-  width: 280px;
-  height: 220px;
-  margin-bottom: 40px;
-}
-
-.basket {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 140px;
-  background: repeating-linear-gradient(
-    45deg,
-    #c08552,
-    #c08552 8px,
-    #a86b3f 8px,
-    #a86b3f 16px
-  );
-  border-radius: 0 0 40px 40px;
-  border: 4px solid #8a5a34;
-  border-top: none;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.basket-handle {
-  position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 70px;
-  border: 8px solid #8a5a34;
-  border-bottom: none;
-  border-radius: 70px 70px 0 0;
-  z-index: 1;
-}
-
-.fruits-in-basket {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 0 20px 30px;
-  z-index: 2;
-}
-
-.fruit-circle {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  box-shadow:
-    inset -4px -4px 8px rgba(0, 0, 0, 0.25),
-    2px 2px 4px rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-/* Liste */
 .fruit-list {
   list-style: none;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
-  width: 280px;
+  padding: 10px 24px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .fruit-list li {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 14px 0;
   border-bottom: 1px solid #eee;
   font-weight: 600;
 }
@@ -117,7 +52,7 @@ h1 {
 }
 
 .fruit-name {
-  color: var(--fruit-color);
+  color: #5a3825;
 }
 
 .fruit-details {
