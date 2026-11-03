@@ -125,3 +125,8 @@ h1 {
   font-weight: 400;
   margin-left: auto;
 }
+
+.fruit-list li.error {
+  color: #b00020;
+  font-weight: 400;
+}
